@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: 'https://your-frontend.vercel.app',  
+  origin: 'https://poland-full-stack-task.vercel.app',  // ✅ Updated to actual frontend URL
   credentials: true
 }));
 
