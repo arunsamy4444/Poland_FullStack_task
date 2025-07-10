@@ -12,6 +12,7 @@ export default function OrderList() {
   const [error, setError] = useState("");
 
   const token = localStorage.getItem("authToken");
+  const BACKEND_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
   const fetchFilteredOrders = async () => {
     try {
@@ -20,7 +21,7 @@ export default function OrderList() {
       if (maxWorth) query.push(`maxWorth=${maxWorth}`);
       const queryString = query.length ? `?${query.join("&")}` : "";
 
-      const res = await fetch(`http://localhost:5000/orders${queryString}`, {
+       const res = await fetch(`${BACKEND_URL}/orders${queryString}`, {
         headers: { Authorization: `Basic ${token}` },
       });
 
