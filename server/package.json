@@ -1,4 +1,15 @@
 {
+  "name": "poland-fullstack-task-backend",
+  "version": "1.0.0",
+  "description": "Backend for Poland FullStack Task",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Arun Samy",
+  "license": "ISC",
   "dependencies": {
     "@google-cloud/translate": "^9.1.0",
     "axios": "^1.10.0",
@@ -14,7 +25,9 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.16.0",
     "node-fetch": "^2.7.0",
-    "nodemon": "^3.1.10",
     "react-i18next": "^15.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
