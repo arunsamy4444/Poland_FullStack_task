@@ -1,0 +1,152 @@
+[
+  {
+    "orderID": "ORD001",
+    "products": [
+      {
+        "productID": "P001",
+        "name": "Headphone",
+        "image": "/images/headphone.jpg",
+        "quantity": 2
+      },
+      {
+        "productID": "P002",
+        "name": "Bag",
+        "image": "/images/bag.jpg",
+        "quantity": 1
+      }
+    ],
+    "orderWorth": 2400
+  },
+  {
+    "orderID": "ORD002",
+    "products": [
+      {
+        "productID": "P003",
+        "name": "Bat",
+        "image": "/images/bat.jpg",
+        "quantity": 3
+      }
+    ],
+    "orderWorth": 1800
+  },
+  {
+    "orderID": "ORD003",
+    "products": [
+      {
+        "productID": "P004",
+        "name": "Football",
+        "image": "/images/football.jpg",
+        "quantity": 1
+      },
+      {
+        "productID": "P005",
+        "name": "Laptop",
+        "image": "/images/lap.jpg",
+        "quantity": 4
+      }
+    ],
+    "orderWorth": 3250
+  },
+  {
+    "orderID": "ORD004",
+    "products": [
+      {
+        "productID": "P006",
+        "name": "Mobile",
+        "image": "/images/mob.jpg",
+        "quantity": 2
+      }
+    ],
+    "orderWorth": 1200
+  },
+  {
+    "orderID": "ORD005",
+    "products": [
+      {
+        "productID": "P007",
+        "name": "Shirt",
+        "image": "/images/shirt.jpg",
+        "quantity": 1
+      },
+      {
+        "productID": "P008",
+        "name": "Shoe",
+        "image": "/images/shoe.jpg",
+        "quantity": 2
+      }
+    ],
+    "orderWorth": 2750
+  },
+  {
+    "orderID": "ORD006",
+    "products": [
+      {
+        "productID": "P009",
+        "name": "Watch",
+        "image": "/images/watch.webp",
+        "quantity": 5
+      }
+    ],
+    "orderWorth": 1500
+  },
+  {
+    "orderID": "ORD007",
+    "products": [
+      {
+        "productID": "P010",
+        "name": "Football",
+        "image": "/images/football.jpg",
+        "quantity": 1
+      },
+      {
+        "productID": "P011",
+        "name": "Shirt",
+        "image": "/images/shirt.jpg",
+        "quantity": 2
+      }
+    ],
+    "orderWorth": 3600
+  },
+  {
+    "orderID": "ORD008",
+    "products": [
+      {
+        "productID": "P012",
+        "name": "Laptop",
+        "image": "/images/lap.jpg",
+        "quantity": 3
+      }
+    ],
+    "orderWorth": 900
+  },
+  {
+    "orderID": "ORD009",
+    "products": [
+      {
+        "productID": "P013",
+        "name": "Bag",
+        "image": "/images/bag.jpg",
+        "quantity": 2
+      },
+      {
+        "productID": "P014",
+        "name": "Shoe",
+        "image": "/images/shoe.jpg",
+        "quantity": 2
+      }
+    ],
+    "orderWorth": 2100
+  },
+  {
+    "orderID": "ORD010",
+    "products": [
+      {
+        "productID": "P015",
+        "name": "Mobile",
+        "image": "/images/mob.jpg",
+        "quantity": 1
+      }
+    ],
+    "orderWorth": 800
+  }
+]
