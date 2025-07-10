@@ -11,7 +11,7 @@ export default function OrderList() {
   const [filterMode, setFilterMode] = useState("id"); // 'id', 'name', 'price'
   const [error, setError] = useState("");
 
-  const token = localStorage.getItem("authToken");
+  const token = btoa(`${process.env.REACT_APP_BASIC_USER}:${process.env.REACT_APP_BASIC_PASS}`);
   const BACKEND_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
   const fetchFilteredOrders = async () => {
     try {
