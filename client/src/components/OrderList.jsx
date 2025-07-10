@@ -12,7 +12,7 @@ export default function OrderList() {
   const [error, setError] = useState("");
 
   const token = localStorage.getItem("authToken");
-  const BACKEND_URL = process.env.REACT_APP_API_URL
+  const BACKEND_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
   const fetchFilteredOrders = async () => {
     try {
       let query = [];
