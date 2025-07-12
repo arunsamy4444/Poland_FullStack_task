@@ -44,7 +44,15 @@ const Login = ({ onLogin }) => {
       <br />
       <button type="submit">Login</button>
     </form>
-     <ToastContainer position="top-center" autoClose={2000} />
+     {/* Toast container with better theme */}
+      <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        theme="colored"  // 💡 enables dark-colored background for toast
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+      />
     </>
 
   );
