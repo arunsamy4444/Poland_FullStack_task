@@ -37,8 +37,8 @@ export default function OrderList() {
       setError("❌ Could not fetch orders");
        toast.error("❌ API error or CORS issue. Try again or use localhost (ask me for screen share).");
     }
-    }
   };
+  
   useEffect(() => {
     toast.info("ℹ️ Note: This might load slow due to free tier (Render/Vercel)");
     fetchFilteredOrders();
