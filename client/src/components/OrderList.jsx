@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './orderlist.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function OrderList() {
   const [orders, setOrders] = useState([]);
@@ -13,6 +15,7 @@ export default function OrderList() {
 
   const token = btoa(`${process.env.REACT_APP_BASIC_USER}:${process.env.REACT_APP_BASIC_PASS}`);
   const BACKEND_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
+  
   const fetchFilteredOrders = async () => {
     try {
       let query = [];
@@ -32,8 +35,15 @@ export default function OrderList() {
     } catch (err) {
       console.error(err);
       setError("❌ Could not fetch orders");
+       toast.error("❌ API error or CORS issue. Try again or use localhost (ask me for screen share).");
+    }
     }
   };
+  useEffect(() => {
+    toast.info("ℹ️ Note: This might load slow due to free tier (Render/Vercel)");
+    fetchFilteredOrders();
+  }, []);
+
 
   useEffect(() => {
     if (filterMode === "price") {
@@ -65,6 +75,7 @@ export default function OrderList() {
       setOrders(filtered);
       if (filtered.length === 0) {
         setError(`❌ No matching results`);
+        toast.warn("⚠️ No matching results found");
       } else {
         setError("");
       }
@@ -101,6 +112,8 @@ export default function OrderList() {
   return (
     <div>
       <h2>📦 Orders</h2>
+          {/* Toast container */}
+      <ToastContainer position="top-right" autoClose={3000} />
 
       {/* 🔽 Mode Selector + Dynamic Inputs */}
       <div className="filter-bar">
