@@ -3,8 +3,8 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-const API_KEY = 'YXBwbGljYXRpb24xNjpYeHI1K0MrNVRaOXBaY2lEcnpiQzBETUZROUxrRzFFYXZuMkx2L0RHRXZRdXNkcmF5R0Y3ZnhDMW1nejlmVmZP';
-const BASE_URL = 'https://api.iai-shop.com/webapi';
+// const API_KEY = 'YXBwbGljYXRpb24xNjpYeHI1K0MrNVRaOXBaY2lEcnpiQzBETUZROUxrRzFFYXZuMkx2L0RHRXZRdXNkcmF5R0Y3ZnhDMW1nejlmVmZP';
+// const BASE_URL = 'https://api.iai-shop.com/webapi';
 
 async function fetchOrders() {
   try {
