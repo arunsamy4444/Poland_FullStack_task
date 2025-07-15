@@ -1,5 +1,6 @@
 // middleware/auth.js
 module.exports = function (req, res, next) {
+   if (req.method === 'OPTIONS') return next(); // ✅ allow preflight
   const auth = req.headers.authorization;
 
   if (!auth || !auth.startsWith('Basic ')) {
