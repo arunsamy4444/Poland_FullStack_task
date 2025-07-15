@@ -12,15 +12,15 @@ const corsOptions = {
   credentials: true,
 };
 
-// ✅ Apply CORS globally to all routes and preflight
+// ✅ CORS & preflight applied globally
 app.use(cors(corsOptions));
-app.options('*', cors(corsOptions)); // Preflight always allowed
+app.options('*', cors(corsOptions)); // Must be above auth
 
 app.use(express.json());
 
 app.get('/', (req, res) => res.send('Backend is up!'));
 
-// ✅ Apply CORS BEFORE auth
+// ✅ Apply route AFTER cors and preflight are handled
 app.use('/orders', auth, orderRoutes);
 
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
